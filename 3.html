@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+Fruits:
+<input type="text" id="inp">
+<input type="submit" onclick="fruitFunction()" value="checkFruit">
+<p id="out"></p>
+<script>
+	function fruitFunction(){
+		var text;
+		var fruits = document.getElementById("inp").value;
+		switch(fruits){
+			case "Banana":
+				text="Banana is a Fruit";
+				break;
+			case "Apple":
+				text="Apple is a Fruit";
+				break;
+			case "Orange":
+				text="Orange is a Fruit";
+				break;
+			default:
+				text="It is a Fruit";
+				
+		}
+		document.getElementById('out').innerHTML=text;
+		
+	}
+</script>
+
+
+</body>
+</html>
